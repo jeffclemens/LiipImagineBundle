@@ -31,13 +31,6 @@ annotated configuration examples:
                     # Transforms 50x40 to 32x26, no cropping
                     thumbnail: { size: [32, 32], mode: inset }
 
-
-There is also an option ``allow_upscale`` (default: ``false``). By setting
-``allow_upscale`` to ``true``, an image which is smaller than 32x32px in the
-example above will be expanded to the requested size by interpolation of its
-content. Without this option, a smaller image will be left as it. This means you
-may get images that are smaller than the specified dimensions.
-
 The ``relative_resize`` filter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
